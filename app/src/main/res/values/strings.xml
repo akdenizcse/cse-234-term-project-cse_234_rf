@@ -6,6 +6,9 @@
     <string name="sign_up_text">Sign Up</string>
     <string name="username_hint">Username</string>
     <string name="welcome_message">Welcome to the App</string>
+    <string name="name_hint">Name</string>
+    <string name="surname_hint">Surname</string>
+    <string name="confirm_password_hint">Confirm Password</string>
 
 
 </resources>

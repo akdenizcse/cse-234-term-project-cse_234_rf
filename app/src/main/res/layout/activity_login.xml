@@ -14,7 +14,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="32dp"/>
+        android:autofillHints="emailAddress"
+        android:layout_marginTop="32dp"
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/passwordInput"
@@ -25,6 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailInput"
+        android:autofillHints="password"
         android:layout_marginTop="16dp"/>
 
     <Button
