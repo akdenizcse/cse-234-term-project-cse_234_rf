@@ -13,13 +13,19 @@
         android:theme="@style/Theme.GameFinderApplication"
         tools:targetApi="31">
         <activity
+            android:name=".SignupActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.GameFinderApplication">
+            android:theme="@style/Theme.AppCompat">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
