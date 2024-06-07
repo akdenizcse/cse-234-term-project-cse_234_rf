@@ -18,6 +18,18 @@
             android:exported="true"
             android:theme="@style/Theme.AppCompat"
             />
+        <activity android:name=".ForgotPasswordActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat"
+            />
+        <activity android:name=".VerificationActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat"
+            />
+        <activity android:name=".ResetPasswordActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat"
+            />
         <activity
             android:name=".SignupActivity"
             android:exported="true"

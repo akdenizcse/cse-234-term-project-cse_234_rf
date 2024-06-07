@@ -3,8 +3,10 @@ package com.example.gamefinderapplication
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 
@@ -16,6 +18,7 @@ class LoginActivity : AppCompatActivity() {
         val emailInput: EditText = findViewById(R.id.emailInput)
         val passwordInput: EditText = findViewById(R.id.passwordInput)
         val loginButton: Button = findViewById(R.id.loginButton)
+        val forgotPasswordText: TextView = findViewById(R.id.forgotPasswordText)
 
         loginButton.setOnClickListener {
             val email = emailInput.text.toString()
@@ -28,6 +31,10 @@ class LoginActivity : AppCompatActivity() {
             } else {
                 // add error message later!
             }
+        }
+        forgotPasswordText.setOnClickListener {
+            val intent = Intent(this, ForgotPasswordActivity::class.java)
+            startActivity(intent)
         }
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
@@ -50,4 +57,8 @@ class LoginActivity : AppCompatActivity() {
         // Add validation code later!
         return true
     }
+    fun onForgotPasswordClick(view: View) {
+        // Implement your forgot password logic here
+    }
+
 }
