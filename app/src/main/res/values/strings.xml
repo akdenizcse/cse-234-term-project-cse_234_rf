@@ -13,5 +13,12 @@
     <string name="profile_text">Profile</string>
     <string name="home_page">Home Page</string>
     <string name="profile_page">Profile Page</string>
+    <string name="forgot_password_text">Forgot password?</string>
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="send_verification_code_button_text">Send Verification Code</string>
+    <string name="verification_code_hint">Verification Code</string>
+    <string name="verify_code_button_text">Reset Password</string>
+    <string name="reset_password_button_text">Reset Password</string>
+    <string name="new_password_hint">New Password</string>
 
 </resources>
