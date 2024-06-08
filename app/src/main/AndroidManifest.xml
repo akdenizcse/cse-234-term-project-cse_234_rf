@@ -26,6 +26,14 @@
             android:exported="true"
             android:theme="@style/Theme.AppCompat"
             />
+        <activity android:name=".GameInfoActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat"
+            />
+        <activity android:name=".Game"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat"
+            />
         <activity android:name=".ResetPasswordActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat"

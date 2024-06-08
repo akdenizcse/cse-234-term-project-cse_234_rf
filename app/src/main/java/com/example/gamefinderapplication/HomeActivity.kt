@@ -16,7 +16,7 @@ class HomeActivity : AppCompatActivity() {
         navView.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.navigation_home -> {
-                    openFragment(HomeFragment())
+                    openFragment(GameListFragment())
                     return@setOnItemSelectedListener true
                 }
                 R.id.navigation_profile -> {
