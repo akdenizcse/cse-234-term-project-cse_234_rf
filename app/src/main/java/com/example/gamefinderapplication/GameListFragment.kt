@@ -14,8 +14,18 @@ class GameListFragment : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var gameAdapter: GameAdapter
     private val gameList = listOf(
-        Game("Game 1", "", "url1", "Genre 1", 19.99, listOf("Platform 1", "Platform 2")),
-        Game("Game 2", "", "url2", "Genre 2", 29.99, listOf("Platform 3", "Platform 4"))
+        Game("Red Dead Redemption 2",
+            "Winner of over 175 Game of the Year Awards and recipient of over 250 perfect scores, RDR2 is the epic tale of outlaw Arthur Morgan and the infamous Van der Linde gang, on the run across America at the dawn of the modern age. Also includes access to the shared living world of Red Dead Online.",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEDO5luWg5TvlOxZ-0IAtxzLzRWYY9GmF7PA&s",
+            "Open-World",
+            59.99,
+            listOf("PS 4", "Xbox One","PC")),
+        Game("Paladins",
+            "Paladins is the ultimate fantasy team-based shooter experience, with over 50 customizable Champions fighting in 5v5 action across a diverse Realm of modes and maps!",
+            "https://image.api.playstation.com/vulcan/img/rnd/202201/0414/gXlQ9CTsFCyKoVUjRNEYC3v1.png",
+            "FPS",
+            0.0,
+            listOf("Nintendo Switch", "PS 4","PS 5", "PC"))
         // Add more games with appropriate values for genre, price, and platforms
     )
 

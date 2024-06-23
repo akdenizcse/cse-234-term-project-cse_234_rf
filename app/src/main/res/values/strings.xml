@@ -26,6 +26,7 @@
         <string name="gamePlatforms">Platforms</string>
         <string name="gameDescription">Description</string>
         <string name="image">Image</string>
+        <string name="gameImage">Game Image</string>
 
 
     </resources>

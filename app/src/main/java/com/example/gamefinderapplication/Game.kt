@@ -1,4 +1,5 @@
 package com.example.gamefinderapplication
+
 import android.os.Parcel
 import android.os.Parcelable
 
@@ -6,9 +7,9 @@ data class Game(
     val name: String,
     val description: String,
     val url: String,
-    val genre: String, // Add genre property
-    val price: Double, // Add price property
-    val platforms: List<String> // Add platforms property
+    val genre: String,
+    val price: Double,
+    val platforms: List<String>
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString() ?: "",
@@ -28,17 +29,10 @@ data class Game(
         parcel.writeStringList(platforms)
     }
 
-    override fun describeContents(): Int {
-        return 0
-    }
+    override fun describeContents(): Int = 0
 
     companion object CREATOR : Parcelable.Creator<Game> {
-        override fun createFromParcel(parcel: Parcel): Game {
-            return Game(parcel)
-        }
-
-        override fun newArray(size: Int): Array<Game?> {
-            return arrayOfNulls(size)
-        }
+        override fun createFromParcel(parcel: Parcel): Game = Game(parcel)
+        override fun newArray(size: Int): Array<Game?> = arrayOfNulls(size)
     }
 }
