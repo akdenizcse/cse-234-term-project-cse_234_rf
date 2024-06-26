@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:padding="16dp">
 
-        <!-- Game Name -->
+
         <TextView
             android:id="@+id/gameName"
             android:layout_width="0dp"
@@ -24,7 +24,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- Game Image -->
+
         <ImageView
             android:id="@+id/gameImage"
             android:layout_width="0dp"
@@ -37,7 +37,7 @@
             android:contentDescription="@string/gameImage"
             android:src="@drawable/default_game_image" />
 
-        <!-- Game Genre -->
+
         <TextView
             android:id="@+id/gameGenre"
             android:layout_width="0dp"
@@ -49,7 +49,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- Game Description -->
+
         <TextView
             android:id="@+id/gameDescription"
             android:layout_width="0dp"
@@ -61,7 +61,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- Game Platforms -->
+
         <TextView
             android:id="@+id/gamePlatforms"
             android:layout_width="0dp"
@@ -73,7 +73,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- Game Price -->
+
         <TextView
             android:id="@+id/gamePrice"
             android:layout_width="0dp"
