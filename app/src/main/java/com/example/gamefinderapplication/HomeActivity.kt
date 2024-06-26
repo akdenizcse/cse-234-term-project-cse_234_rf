@@ -11,6 +11,8 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+        supportActionBar?.title = "GameFinder"
+
         val navView: BottomNavigationView = findViewById(R.id.bottom_navigation)
 
         navView.setOnItemSelectedListener { item ->

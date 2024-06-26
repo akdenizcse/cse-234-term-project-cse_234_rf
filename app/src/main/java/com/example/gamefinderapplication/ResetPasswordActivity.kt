@@ -13,6 +13,8 @@ class ResetPasswordActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_reset_password)
 
+        supportActionBar?.title = "Reset Password"
+
         val newPasswordEditText: EditText = findViewById(R.id.editNewPassword)
         val confirmPasswordEditText: EditText = findViewById(R.id.editConfirmPassword)
         val resetPasswordButton: Button = findViewById(R.id.resetPasswordButton)
@@ -30,13 +32,13 @@ class ResetPasswordActivity : AppCompatActivity() {
             } else if (validatePasswords(newPassword, confirmPassword)) {
                 Log.d("ResetPasswordActivity", "Passwords validated")
 
-                // Call API to reset the password (logic to be added later)
+                // api call for reset password add later
 
-                // Navigate to LoginActivity
+
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
                 Log.d("ResetPasswordActivity", "Navigating to LoginActivity")
-                finish() // Optional: finish this activity to prevent going back to it
+                finish()
             } else {
                 Log.d("ResetPasswordActivity", "Password validation failed")
                 Toast.makeText(this, "Passwords do not match or are too short", Toast.LENGTH_SHORT).show()

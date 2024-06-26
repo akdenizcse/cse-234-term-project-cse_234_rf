@@ -20,6 +20,9 @@ class GameInfoActivity : AppCompatActivity() {
         val game = intent.getParcelableExtra<Game>("game")
 
         game?.let {
+
+            supportActionBar?.title = it.name
+
             findViewById<TextView>(R.id.gameName).text = it.name
             findViewById<TextView>(R.id.gameGenre).text = it.genre
             findViewById<TextView>(R.id.gameDescription).text = it.description
@@ -30,7 +33,7 @@ class GameInfoActivity : AppCompatActivity() {
             val gameImage = findViewById<ImageView>(R.id.gameImage)
             Glide.with(this)
                 .load(it.url)
-                .placeholder(R.drawable.default_game_image) // Add a placeholder image in case the image fails to load
+                .placeholder(R.drawable.default_game_image)
                 .into(gameImage)
         }
     }

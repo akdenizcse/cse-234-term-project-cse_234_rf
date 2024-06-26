@@ -10,6 +10,8 @@ class ForgotPasswordActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forgot_password)
 
+        supportActionBar?.title = "Forgot Password"
+
         val sendVerificationCodeButton: Button = findViewById(R.id.sendVerificationCodeButton)
         sendVerificationCodeButton.setOnClickListener {
             val intent = Intent(this, VerificationActivity::class.java)

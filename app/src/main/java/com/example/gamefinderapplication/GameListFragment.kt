@@ -26,7 +26,7 @@ class GameListFragment : Fragment() {
             "FPS",
             0.0,
             listOf("Nintendo Switch", "PS 4","PS 5", "PC"))
-        // Add more games with appropriate values for genre, price, and platforms
+
     )
 
     override fun onCreateView(

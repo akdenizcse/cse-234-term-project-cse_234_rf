@@ -10,12 +10,14 @@ class VerificationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_verification)
 
+            supportActionBar?.title = "Verification"
+
         val verifyCodeButton: Button = findViewById(R.id.verifyCodeButton)
 
         verifyCodeButton.setOnClickListener {
-            // Add logic to verify the entered code
+            // api call for verification code add later
 
-            // Navigate to ResetPasswordActivity
+
             val intent = Intent(this, ResetPasswordActivity::class.java)
             startActivity(intent)
         }

@@ -27,6 +27,8 @@
         <string name="gameDescription">Description</string>
         <string name="image">Image</string>
         <string name="gameImage">Game Image</string>
+            <string name="login_text">Log in to Game Finder</string>
+            <string name="app_logo_description">app logo</string>
 
 
     </resources>

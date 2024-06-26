@@ -33,10 +33,10 @@ class GameAdapter(private val gameList: List<Game>, private val clickListener: (
         holder.gamePrice.text = "$${gameItem.price}"
         holder.gamePlatforms.text = gameItem.platforms.joinToString(", ")
 
-        // Load the game image using Glide
+
         Glide.with(holder.itemView.context)
-            .load(gameItem.url)  // Assuming `url` contains the image URL
-            .placeholder(R.drawable.default_game_image) // Add a placeholder image in case the image fails to load
+            .load(gameItem.url)
+            .placeholder(R.drawable.default_game_image)
             .into(holder.gameImage)
 
         holder.itemView.setOnClickListener {

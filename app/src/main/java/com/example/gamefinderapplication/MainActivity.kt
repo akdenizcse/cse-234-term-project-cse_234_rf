@@ -10,6 +10,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
 
+        supportActionBar?.title = "Welcome"
+
         val loginButton: Button = findViewById(R.id.loginButton)
         val signupButton: Button = findViewById(R.id.signupButton)
 
