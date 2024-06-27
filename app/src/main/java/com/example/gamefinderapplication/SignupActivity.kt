@@ -25,7 +25,7 @@ class SignupActivity : AppCompatActivity() {
         supportActionBar?.title = "Sign Up"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-
+        // Initialize views
         usernameInput = findViewById(R.id.usernameInput)
         nameInput = findViewById(R.id.nameInput)
         surnameInput = findViewById(R.id.surnameInput)
@@ -36,7 +36,8 @@ class SignupActivity : AppCompatActivity() {
 
         signupButton.setOnClickListener {
             if (validateInput()) {
-                //api call later
+                // Proceed with signup logic
+                // For now, let's just finish the activity
                 finish()
             }
         }

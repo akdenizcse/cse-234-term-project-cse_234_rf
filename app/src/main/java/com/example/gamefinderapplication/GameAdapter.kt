@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
-class GameAdapter(private val gameList: List<Game>, private val clickListener: (Game) -> Unit) :
+class GameAdapter(private var gameList: List<Game>, private val clickListener: (Game) -> Unit) :
     RecyclerView.Adapter<GameAdapter.GameViewHolder>() {
 
     class GameViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -33,7 +33,6 @@ class GameAdapter(private val gameList: List<Game>, private val clickListener: (
         holder.gamePrice.text = "$${gameItem.price}"
         holder.gamePlatforms.text = gameItem.platforms.joinToString(", ")
 
-
         Glide.with(holder.itemView.context)
             .load(gameItem.url)
             .placeholder(R.drawable.default_game_image)
@@ -45,4 +44,10 @@ class GameAdapter(private val gameList: List<Game>, private val clickListener: (
     }
 
     override fun getItemCount() = gameList.size
+
+    @SuppressLint("NotifyDataSetChanged")
+    fun updateGames(newGameList: List<Game>) {
+        gameList = newGameList
+        notifyDataSetChanged()
+    }
 }
