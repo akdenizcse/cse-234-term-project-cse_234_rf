@@ -14,7 +14,7 @@
         <string name="home_page">Home Page</string>
         <string name="profile_page">Profile Page</string>
         <string name="forgot_password_text">Forgot password?</string>
-        <string name="forgot_password_title">Forgot Password</string>
+        <string name="forgot_password_title">Enter your mail to get verification code</string>
         <string name="send_verification_code_button_text">Send Verification Code</string>
         <string name="verification_code_hint">Verification Code</string>
         <string name="verify_code_button_text">Reset Password</string>
@@ -29,6 +29,24 @@
         <string name="gameImage">Game Image</string>
             <string name="login_text">Log in to Game Finder</string>
             <string name="app_logo_description">app logo</string>
+        <string name="platforms">Platforms</string>
+            <string name="ps_4">PS 4</string>
+            <string name="xbox_one">Xbox One</string>
+            <string name="pc">PC</string>
+            <string name="price">Price</string>
+        <string name="search">Search</string>
+            <string name="filter">Filter</string>
+            <string name="max_price_100">Max Price: $100</string>
+        <string name="first_name_last_name">First Name Last Name</string>
+        <string name="email_example_com">email@example.com</string>
+        <string name="password_hardcoded">*********</string>
+        <string name="edit_profile">Edit Profile</string>
+        <string name="todo">TODO</string>
+        <string name="logout">Logout</string>
+        <string name="verification">verification</string>
+            <string name="verification_code_text">Enter verification code</string>
+        <string name="reset_password_hint" />
+        <string name="reset_password_text">Enter new password</string>
 
 
     </resources>

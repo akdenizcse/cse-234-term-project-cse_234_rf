@@ -2,6 +2,7 @@ package com.example.gamefinderapplication
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -14,7 +15,7 @@ class HomeActivity : AppCompatActivity() {
         supportActionBar?.title = "GameFinder"
 
         val navView: BottomNavigationView = findViewById(R.id.bottom_navigation)
-
+        navView.setBackgroundColor(ContextCompat.getColor(this, R.color.gray))
         navView.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.navigation_home -> {

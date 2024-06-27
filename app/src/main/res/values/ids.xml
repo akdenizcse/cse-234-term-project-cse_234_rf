@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="profilePicture" type="id" />
+    <item name="nameTextView" type="id" />
+    <item name="emailTextView" type="id" />
+    <item name="passwordTextView" type="id" />
+    <item name="editProfileButton" type="id" />
+</resources>

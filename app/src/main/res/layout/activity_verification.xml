@@ -4,8 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VerificationActivity">
+    tools:context=".VerificationActivity"
+    android:padding="30dp">
 
+
+    <ImageView
+        android:id="@+id/imageTop"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_verification_code"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/verification_code_hint" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verification_code_text"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/imageTop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="16dp"/>
 
     <EditText
         android:id="@+id/verificationCodeInput"
@@ -14,21 +41,23 @@
         android:hint="@string/verification_code_hint"
         android:inputType="text"
         android:autofillHints="verificationCode"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/rounded_edittext_background"
         android:layout_marginTop="32dp"
         android:minHeight="48dp"/>
 
 
     <Button
         android:id="@+id/verifyCodeButton"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="@string/verify_code_button_text"
         app:layout_constraintTop_toBottomOf="@id/verificationCodeInput"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="46dp"
+        android:background="@drawable/rounded_button_primary"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
